@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Rancho Maranata, em Miguelópolis (SP): hospedagem, suítes, piscina com hidromassagem, área gourmet e passeios em meio à natureza.">
+<meta name="theme-color" content="#4F5D3A">
+<title>Rancho Maranata | Miguelópolis, SP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <!-- intro com a logo: aparece ~1,5 s e some, revelando o site -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <img src="logo.maranata.png" alt="" class="intro-logo">
+  </div>
+
+
+  <!-- trilha decorativa que acompanha a página -->
+  <svg class="trilha" id="trilha-svg" viewBox="0 0 100 2000" preserveAspectRatio="none" aria-hidden="true">
+    <path id="trilha-path" d="M 50 0
+      C 20 100, 80 150, 50 250
+      S 15 400, 50 500
+      S 85 650, 50 750
+      S 15 900, 50 1000
+      S 85 1150, 50 1250
+      S 15 1400, 50 1500
+      S 85 1650, 50 1750
+      S 20 1900, 50 2000" />
+  </svg>
+
+  <header class="cabecalho" id="topo">
+    <div class="cabecalho-conteudo">
+      <a href="#topo" class="marca">
+        <span class="marca-icone" aria-hidden="true">
+          <img src="./img/logo.maranata.png" alt="" class="marca-icone-img">
+        </span>
+        <span class="marca-texto">
+          Rancho <strong>Maranata</strong>
+        </span>
+      </a>
+
+      <button class="menu-botao" id="menu-botao" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#sobre">O Rancho</a>
+        <a href="#hospedagem">Hospedagem</a>
+        <a href="#suites">Suítes</a>
+        <a href="#passeios">Passeios</a>
+        <a href="#localizacao">Localização</a>
+        <a href="#contato" class="nav-cta">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-textura" aria-hidden="true"></div>
+      <div class="hero-conteudo">
+        <p class="rotulo reveal">Miguelópolis · São Paulo</p>
+        <h1 class="hero-titulo reveal">
+          Um pedaço de terra,<br> sol e sossego.
+        </h1>
+        <p class="hero-descricao reveal">
+         O Rancho Maranata é feito de manhãs radiantes de sol,
+          do abraço fresco do nosso rio e da energia vibrante da natureza após a chuva.
+           Venha viver dias inesquecíveis e cheios de alegria com a gente!
+        </p>
+        <div class="hero-acoes reveal">
+          <a href="#hospedagem" class="botao botao-primario">Ver hospedagem</a>
+          <a href="#passeios" class="botao botao-fantasma">Ver passeios</a>
+        </div>
+      </div>
+        <!-- vídeo de abertura -->
+<video autoplay loop muted playsinline class="meu-video">
+  <source src="./video/introinicial.mp4" type="video/mp4">
+  Seu navegador não suporta vídeos.
+</video>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="sobre" id="sobre">
+      <div class="secao-cabecalho reveal">
+        <p class="rotulo">O rancho</p>
+        <h2>Lugar de gente que tem raiz no chão e paz na alma</h2>
+      </div>
+      <div class="sobre-grade">
+        <div class="sobre-texto reveal">
+          <p>
+            Fundado em meio às terras de Miguelópolis, o Rancho Maranata
+            nasceu do desejo simples de compartilhar o que a natureza já
+            fazia por conta própria: acolher.
+          </p>
+          <p>
+            Aqui a rotina é ditada pelo sol — ele acorda cedo, pinta a
+            manhã de amarelo, e some atrás do mato no fim do dia deixando
+            um céu cor de terra.
+          </p>
+          <p>
+            Lembre-se:  Se alguém não ama ao Senhor Jesus Cristo, seja anátema. Maranata!
+          </p>
+        </div>
+        <div class="sobre-numeros reveal">
+          <div class="numero-item">
+            <span class="numero">100%</span>
+            <span class="numero-legenda">ar puro, sem pressa</span>
+          </div>
+          <div class="numero-item">
+            <span class="numero">Sol → Chuva → Vida</span>
+            <span class="numero-legenda">o ciclo que rege o rancho</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOSPEDAGEM -->
+    <section class="hospedagem" id="hospedagem">
+      <div class="secao-cabecalho reveal">
+        <p class="rotulo">Onde ficar</p>
+        <h2>Hospedagem</h2>
+        <p class="secao-intro">
+          Cada acomodação guarda um pedacinho diferente do rancho.
+          Um gostinho do que te espera.
+        </p>
+      </div>
+
+      <div class="cartoes-grade">
+
+<article class="cartao cartao-galeria reveal">
+
+  <div class="galeria-viewport">
+    <div class="galeria-trilho">
+      <img src="img/casasede.png" alt="Foto da Casa da Sede" loading="lazy" decoding="async">
+      <img src="./img/sala.mesa.png" alt="Mesa da sala da Casa da Sede" decoding="async">
+      <img src="./img/sala.copa.png" alt="Copa da Casa da Sede" decoding="async">
+      <img src="./img/sala.esta.jpeg" alt="Sala de estar da Casa da Sede" decoding="async">
+      <img src="./img/sala.int.png" alt="Ambiente interno da Casa da Sede" decoding="async">
+    </div>
+
+    <button type="button" class="galeria-seta galeria-seta-anterior" aria-label="Foto anterior">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button type="button" class="galeria-seta galeria-seta-proxima" aria-label="Próxima foto">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
+    <div class="galeria-pontos"></div>
+  </div>
+
+  <!-- 5 fotos = 5 textos, na mesma ordem, todos DENTRO deste div -->
+  <div class="cartao-corpo galeria-textos">
+
+    <div class="galeria-texto ativo">
+      <h3>Casa da Sede</h3>
+      <p>A casa principal, de portas abertas pro pasto e pro pôr do sol.</p>
+      <span class="cartao-tag">Até 8 pessoas</span>
+    </div>
+
+    <div class="galeria-texto">
+      <h3>Mesa da sala</h3>
+      <p>Ambiente com mesa para reunir a família e os amigos nas refeições.</p>
+      <span class="cartao-tag">Casa da Sede</span>
+    </div>
+
+    <div class="galeria-texto">
+      <h3>Cadeiras para descanso </h3>
+      <p>Um cantinho prático para tomar café e conversar com a família.</p>
+      <span class="cartao-tag">Casa da Sede</span>
+    </div>
+
+    <div class="galeria-texto">
+      <h3>Sala de estar</h3>
+      <p>Sofás confortáveis para descansar e conversar depois de um dia no rancho.</p>
+      <span class="cartao-tag">Casa da Sede</span>
+    </div>
+
+    <div class="galeria-texto">
+      <h3>Ambiente interno</h3>
+      <p>Mais um cantinho da casa, pensado para você se sentir em casa.</p>
+      <span class="cartao-tag">Casa da Sede</span>
+    </div>
+
+  </div>
+
+</article>
+           
+       <article class="cartao cartao-galeria reveal">
+
+  <div class="galeria-viewport">
+    <div class="galeria-trilho">
+      <img src="./img/arealazer.png" alt="Área gourmet do Rancho Maranata" loading="lazy" decoding="async">
+      <img src="./img/churrasqueira.jpeg" alt="Área gourmet, outro ângulo" decoding="async">
+      <img src="./img/fornopizzaartesanal.png" alt="Área gourmet, outro ângulo" decoding="async">
+    </div>
+
+    <button type="button" class="galeria-seta galeria-seta-anterior" aria-label="Foto anterior">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button type="button" class="galeria-seta galeria-seta-proxima" aria-label="Próxima foto">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
+    <div class="galeria-pontos"></div>
+  </div>
+
+  <div class="cartao-corpo galeria-textos">
+    <div class="galeria-texto ativo">
+      <h3>Área gourmet</h3>
+      <p>Espaço rústico e super completo! Área gourmet com mesa para 10 pessoas, churrasqueira, forno de pizza e 2 geladeiras.</p>
+      <span class="cartao-tag">Área familiar</span>
+    </div>
+    <div class="galeria-texto">
+      <h3>Área gourmet</h3>
+      <p>Churrasco e boas conversas, tudo no mesmo espaço, com muito conforto.</p>
+      <span class="cartao-tag">Área familiar</span>
+    </div>
+     <div class="galeria-texto">
+      <h3>Área gourmet</h3>
+      <p>Se Pensar em Pizza , temos a solução perfeita para você e sua família.</p>
+      <span class="cartao-tag">Área familiar</span>
+    </div>
+  </div>
+
+</article>
+        
+        <article class="cartao cartao-galeria reveal">
+
+  <div class="galeria-viewport">
+    <div class="galeria-trilho">
+      <img src="./img/fotopiscina.png" alt="Piscina com hidromassagem do Rancho Maranata" loading="lazy" decoding="async">
+      <img src="./img/fotosinuca.lazer.jpeg" alt="Mesa de sinuca do Rancho Maranata" decoding="async">
+       <img src="./img/pier.jpeg" alt="pier do Rancho Maranata" decoding="async">
+        <img src="./img/parquinho.png" alt="parquinho do Rancho Maranata" decoding="async">
+         
+    </div>
+
+    <button type="button" class="galeria-seta galeria-seta-anterior" aria-label="Foto anterior">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button type="button" class="galeria-seta galeria-seta-proxima" aria-label="Próxima foto">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
+    <div class="galeria-pontos"></div>
+  </div>
+
+  <div class="cartao-corpo galeria-textos">
+    <div class="galeria-texto ativo">
+      <h3>Área de Lazer</h3>
+      <p>Uma piscina com hidromassagem, perfeita para relaxar e renovar as energias após um dia de descanso e experiências no rancho.</p>
+      <span class="cartao-tag">Área de Lazer</span>
+    </div>
+    <div class="galeria-texto">
+      <h3>Área de Lazer</h3>
+      <p>Uma partida de sinuca com a família e os amigos, para animar a noite e render boas risadas.</p>
+      <span class="cartao-tag">Área de Lazer</span>
+    </div>
+    <div class="galeria-texto">
+      <h3>Por do Sol</h3>
+      <p>Uma vista deslumbrante do por do sol sobre o rancho, perfeita para momentos de tranquilidade e reflexão.</p>
+      <span class="cartao-tag">Área de Lazer</span>
+    </div>
+    
+   <div class="galeria-texto">
+      <h3>Parquinho</h3>
+      <p>Um espaço dedicado à recreação e ao lazer, com brinquedos e áreas de descanso para crianças e adultos.</p>
+      <span class="cartao-tag">Área de Lazer</span>
+    </div>
+   </div>
+  </div>
+
+</article>
+
+      </div>
+    </section>
+
+    
+  <section class="suites" id="suites">
+      <div class="secao-cabecalho reveal">
+        <p class="rotulo">Onde dormir</p>
+        <h2>Suítes</h2>
+        <p class="secao-intro">
+          Cada suíte guarda um pedacinho diferente do rancho. Passe o olho pela coleção.
+        </p>
+      </div>
+
+      <div class="carrossel-linha">
+
+        <div class="carrossel reveal" id="carrossel-suite-esquerda">
+          <div class="carrossel-viewport">
+            <div class="carrossel-trilho">
+              <figure class="carrossel-slide">
+                <img src="./img/quartost1.jpeg" alt="Quarto da suíte 1" loading="lazy" decoding="async">
+                
+              </figure>
+              <figure class="carrossel-slide">
+                <img src="./img/banheirost1.jpeg" alt="Banheiro da suíte 1" loading="lazy" decoding="async">
+              </figure>
+            </div>
+          </div>
+
+          <button type="button" class="carrossel-seta carrossel-seta-anterior" aria-label="Foto anterior">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button type="button" class="carrossel-seta carrossel-seta-proxima" aria-label="Próxima foto">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+
+          <div class="carrossel-indicadores"></div>
+        </div>
+
+        <div class="carrossel reveal" id="carrossel-suite-meio">
+          <div class="carrossel-viewport">
+            <div class="carrossel-trilho">
+              <figure class="carrossel-slide">
+                <img src="./img/quartost2.jpeg" alt="Quarto da suíte 2" loading="lazy" decoding="async">
+               
+              </figure>
+              <figure class="carrossel-slide">
+                <img src="./img/banheirost2.jpeg" alt="Banheiro da suíte 2" loading="lazy" decoding="async">
+              </figure>
+              
+            </div>
+          </div>
+
+          <button type="button" class="carrossel-seta carrossel-seta-anterior" aria-label="Foto anterior">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button type="button" class="carrossel-seta carrossel-seta-proxima" aria-label="Próxima foto">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+
+          <div class="carrossel-indicadores"></div>
+        </div>
+
+        <div class="carrossel reveal" id="carrossel-suite-direita">
+          <div class="carrossel-viewport">
+            <div class="carrossel-trilho">
+              <figure class="carrossel-slide">
+                <img src="./img/quartost3.jpeg" alt="Quarto da suíte 3" loading="lazy" decoding="async">
+                
+              </figure>
+              <figure class="carrossel-slide">
+                <img src="./img/banheirost3.jpeg" alt="Banheiro da suíte 3" loading="lazy" decoding="async">
+              </figure>
+             
+            </div>
+          </div>
+
+          <button type="button" class="carrossel-seta carrossel-seta-anterior" aria-label="Foto anterior">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button type="button" class="carrossel-seta carrossel-seta-proxima" aria-label="Próxima foto">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+
+          <div class="carrossel-indicadores"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PASSEIOS -->
+   <section class="passeios" id="passeios">
+  <div class="secao-cabecalho reveal">
+    <p class="rotulo">O que fazer</p>
+    <h2>Encantos do Rancho</h2>
+    <p class="secao-intro">
+      As trilhas do Maranata levam pra onde o sinal do celular não chega
+      — de propósito.
+    </p>
+  </div>
+
+  <ol class="trilha-lista">
+    <li class="trilha-item reveal">
+      <div class="trilha-item-foto">
+        <img src="./img/fotopier.jpeg" alt="Deck do píer ao pôr do sol" loading="lazy" decoding="async">
+      </div>
+      <div class="trilha-item-texto">
+        <span class="trilha-item-rotulo">Pôr do Sol no Pier</span>
+        <h3>Caminhada até o Deck</h3>
+        <p>Uma caminhada leve até o deck do píer, perfeita para contemplar o pôr
+           do sol e viver uma experiência única em meio à natureza.</p>
+      </div>
+    </li>
+
+    <li class="trilha-item reveal">
+      <div class="trilha-item-foto">
+        <img src="./img/fotopiscina.lazer.jpeg" alt="Piscina com hidromassagem" loading="lazy" decoding="async">
+      </div>
+      <div class="trilha-item-texto">
+        <span class="trilha-item-rotulo">Lazer</span>
+        <h3>Piscina com hidromassagem</h3>
+        <p>Relaxe na piscina com hidro, ideal para refrescar nos dias quentes
+           ou descansar no fim da tarde.</p>
+      </div>
+    </li>
+
+    <li class="trilha-item reveal">
+      <div class="trilha-item-foto">
+        <img src="./img/fotosinuca.lazer.jpeg" alt="Mesa de sinuca" loading="lazy" decoding="async">
+      </div>
+      <div class="trilha-item-texto">
+        <span class="trilha-item-rotulo">Diversão</span>
+        <h3>Mesa de sinuca</h3>
+        <p>Uma partida de sinuca com a família e os amigos, para animar a
+           noite e render boas risadas.</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+    <!-- LOCALIZAÇÃO -->
+    <section class="localizacao" id="localizacao">
+      <div class="secao-cabecalho reveal">
+        <p class="rotulo">Como chegar</p>
+        <h2>Localização</h2>
+        <p class="secao-intro">
+          A região central de
+          Miguelópolis (SP). Clique no botão abaixo e o seu celular ou
+          computador já abre a rota direto no app de mapas.
+        </p>
+      </div>
+
+      <div class="mapa-caixa reveal">
+        <iframe
+          class="mapa-iframe"
+          title="Mapa da localização do Rancho Maranata"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32916.93102424646!2d-48.05366125806444!3d-20.18808899741153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bafc379d3e99d9%3A0xe11257efd1dff980!2sMiguel%C3%B3polis%2C%20SP%2C%2014530-000!5e1!3m2!1spt-BR!2sbr!4v1786979350891!5m2!1spt-BR!2sbr"
+           width="600" 
+           height="450" 
+           style="border:0;" 
+           allowfullscreen=""
+            loading="lazy" 
+            referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+
+        <div class="mapa-info">
+          <h3>Rancho Maranata</h3>
+          <p>Centro, Miguelópolis - SP<br>14530-000</p>
+          <a
+            class="botao botao-claro"
+            id="botao-rota"
+            href="https://www.google.com/maps/dir/?api=1&destination=-20.1595579,-48.0710724"
+            target="_blank"
+            rel="noopener">
+             Traçar rota até o rancho
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contato" id="contato">
+      <div class="contato-caixa reveal">
+        <p class="rotulo rotulo-claro">Vamos combinar sua estadia</p>
+        <h2>Fale com o Rancho Maranata</h2>
+        <p>Miguelópolis, São Paulo</p>
+        <div class="contato-acoes">
+          <a
+            href="https://wa.me/5516999999999?text=Ol%C3%A1!%20Conheci%20o%20Rancho%20pelo%20Instagram%20e%20gostaria%20de%20consultar%20uma%20estadia.%20Gostaria%20de%20saber%20mais%20sobre%20o%20local%2C%20valores%20e%20disponibilidade.%20%F0%9F%98%8A"
+            target="_blank"
+            rel="noopener"
+            class="botao botao-claro">
+            Chamar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+    <footer class="rodape">
+    <p>© 2026 Rancho Maranata · Miguelópolis, SP · Todos os direitos reservados</p>
+    <p class="rodape-dev">
+      Site desenvolvido por
+      <a href="https://fernandofranco641.github.io/Meu-Portfolio/" target="_blank" rel="noopener">Luiz Fernando</a>.
+      Reprodução do código e do layout proibida sem autorização.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
