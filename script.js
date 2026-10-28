@@ -50,8 +50,22 @@ function mostrarVideo() {
   videoHero.play().catch(() => {});
   videoHero.classList.add('visivel');
 }
-
 if (intro) {
+  const logoIntro = intro.querySelector('.intro-logo');
+  let introIniciada = false;
+
+  const pularIntro = () => {
+    iniciarReveals();
+    mostrarVideo();
+    intro.remove();
+  };
+
+  const iniciarIntro = () => {
+    if (introIniciada) return;
+    introIniciada = true;
+    intro.classList.add('rodando');
+  };
+
   // o site começa a aparecer quando o fundo da intro começa a sumir
   intro.addEventListener('animationstart', (e) => {
     if (e.animationName === 'intro-sai') {
@@ -68,12 +82,25 @@ if (intro) {
     if (logo) logo.style.animation = 'intro-logo-sai 0.2s ease forwards';
     intro.style.animation = 'intro-sai 0.3s ease 0.2s forwards';
   });
-  // garantia: se algo travar a animação, o site aparece mesmo assim
-  setTimeout(() => { iniciarReveals(); mostrarVideo(); intro.remove(); }, 3000);
+
+  const semMovimento = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (semMovimento || !logoIntro) {
+    pularIntro();                                   // sem animação, mostra o site direto
+  } else if (logoIntro.complete) {
+    logoIntro.naturalWidth > 0 ? iniciarIntro() : pularIntro();
+  } else {
+    logoIntro.addEventListener('load', iniciarIntro);   // espera a logo carregar
+    logoIntro.addEventListener('error', pularIntro);
+  }
+
+  // garantia: se a internet estiver muito lenta, o site aparece mesmo assim
+  setTimeout(() => { if (document.body.contains(intro)) pularIntro(); }, 6000);
 } else {
   iniciarReveals();
   mostrarVideo();
 }
+
 
 // ============================================
 // Carrossel de fotos (setas para os lados)
